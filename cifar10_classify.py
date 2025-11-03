@@ -46,7 +46,9 @@ CLASSES = [
 
 # TODO: Try different SYSTEM_PROMPT to improve accuracy.
 SYSTEM_PROMPT = """
-"""
+You are an expert image classifier that can recognize primary objects in images you are given.
+Carefuly analyze the images you recieve and return a label that corresponds only to the main object.
+You can recognize the difference between different kinds of small, medium and large animals as well as vehicles"""
 
 # Constrain the model’s output to *one* of the valid labels.
 USER_INSTRUCTION = f"""
